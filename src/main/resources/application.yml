@@ -17,15 +17,8 @@ server:
 spring:
    application:
       name: camunda
-   jmx:
-      default-domain: camunda-jmx
    main:
       allow-bean-definition-overriding: true
-   jackson:
-      serialization:
-         indent-output: true
-      mapper:
-         sort-properties-alphabetically: false
    jpa:
       database-platform: org.hibernate.dialect.H2Dialect
       generate-ddl: true
@@ -43,29 +36,6 @@ spring:
             prepStmtCacheSize: 250
             prepStmtCacheSqlLimit: 2048
             useServerPrepStmts: true
-   data:
-      web:
-         pageable:
-            default-page-size: 10
-            one-indexed-parameters: false
-      jpa:
-         repositories:
-            bootstrap-mode: deferred
-         open-in-view: false
-         show-sql: true
-         properties:
-            hibernate.jdbc.time_zone: UTC
-            hibernate.id.new_generator_mappings: true
-            hibernate.connection.provider_disables_autocommit: true
-            hibernate.cache.use_second_level_cache: true
-            hibernate.cache.use_query_cache: true
-            hibernate.generate_statistics: true
-            hibernate.jdbc.batch_size: 20
-         hibernate:
-            ddl-auto: update
-            naming:
-               physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
-               implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
    h2:
       console:
          enabled: true
@@ -73,3 +43,11 @@ spring:
          settings:
             trace: false
             web-allow-others: false
+camunda:
+   bpm:
+     admin-user:
+       id: demo
+       password: demo
+       firstName: Demo
+     filter:
+       create: All taskss
