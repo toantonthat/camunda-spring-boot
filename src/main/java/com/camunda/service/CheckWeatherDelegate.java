@@ -12,6 +12,7 @@ public class CheckWeatherDelegate implements JavaDelegate {
 		Random random = new Random();
 		execution.setVariable("name", "Toan");
 		execution.setVariable("weatherOk", random.nextBoolean());
+		
 	}
 
 }
