@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" id="Definitions_0lrzh5x" name="DRD" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="OrderDMN" name="Order DMN">
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="product">
+        <inputExpression id="inputExpression_1" typeRef="string">
+          <text>product</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1fisk8k">
+        <inputExpression id="LiteralExpression_0upmouy" typeRef="integer">
+          <text>quantity</text>
+        </inputExpression>
+      </input>
+      <output id="output_1" label="cost" name="cost" typeRef="integer" />
+      <rule id="DecisionRule_011tvlh">
+        <description>blah blah...</description>
+        <inputEntry id="UnaryTests_06benmm">
+          <text>"Iphone"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19nbe87">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14k8pdd">
+          <text>1000</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1x5yrhv">
+        <inputEntry id="UnaryTests_03tnne1">
+          <text>"Ipad"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jhmvrk">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1yc311e">
+          <text>900</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gtsyda">
+        <inputEntry id="UnaryTests_1os2tu4">
+          <text>"AirPods"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19iuwtc">
+          <text>1</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0tatt1r">
+          <text>200</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

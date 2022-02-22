@@ -1,4 +1,4 @@
-package com.camunda.external;
+package com.camunda.task.external;
 
 import java.util.logging.Logger;
 
