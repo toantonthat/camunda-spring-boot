@@ -12,7 +12,7 @@
           <text>quantity</text>
         </inputExpression>
       </input>
-      <output id="output_1" label="cost" name="cost" typeRef="integer" />
+      <output id="output_1" label="address" name="address" typeRef="string" />
       <rule id="DecisionRule_011tvlh">
         <description>blah blah...</description>
         <inputEntry id="UnaryTests_06benmm">
@@ -22,7 +22,7 @@
           <text>1</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_14k8pdd">
-          <text>1000</text>
+          <text>"Da Nang"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_1x5yrhv">
@@ -33,7 +33,7 @@
           <text>1</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_1yc311e">
-          <text>900</text>
+          <text>"HCM"</text>
         </outputEntry>
       </rule>
       <rule id="DecisionRule_0gtsyda">
@@ -44,7 +44,7 @@
           <text>1</text>
         </inputEntry>
         <outputEntry id="LiteralExpression_0tatt1r">
-          <text>200</text>
+          <text>"HN"</text>
         </outputEntry>
       </rule>
     </decisionTable>

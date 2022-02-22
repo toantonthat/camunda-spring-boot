@@ -2,6 +2,7 @@ package com.camunda.service;
 
 import java.util.logging.Logger;
 
+import org.camunda.bpm.engine.ProcessEngine;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
@@ -16,6 +17,9 @@ public class SendOrderDelegate implements JavaDelegate {
 	
 	@Autowired
 	private RuntimeService runtimeService;
+	
+	@Autowired
+	private ProcessEngine processEngine;
 	
 	@Override
 	public void execute(DelegateExecution execution) throws Exception {
